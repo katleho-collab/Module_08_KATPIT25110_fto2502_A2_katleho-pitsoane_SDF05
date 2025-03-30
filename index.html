@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer Example</title>
+    <title>Footer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
-                        <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
-                            <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
-                            <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Technologies</p>
-                            <div class="">
-                                <a href="#">HTML</a>
-                                <a href="#">CSS</a>
-                                <a href="#">JavaScript</a>
-                            </div>
-                        </div>
+    <footer class="bg-[#659f8f] text-gray-900">
+        <div class="container px-6 py-12 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <h1 class="text-lg font-semibold mb-4">Subscribe to our newsletter for updates.</h1>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input 
+                            id="email" 
+                            type="email" 
+                            placeholder="Email Address" 
+                            class="w-full sm:w-2/3 px-4 py-2.5 rounded-md border border-white focus:outline-none focus:ring-2 focus:ring-[#d86943]"
+                            aria-label="Email Address for Newsletter Subscription"
+                        >
+                        <button 
+                            class="bg-[#d86943] px-6 py-2.5 text-white rounded-md hover:bg-[#b85a38] transition-colors duration-300"
+                            aria-label="Subscribe to Newsletter"
+                        >
+                            Subscribe
+                        </button>
                     </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
-                    </div>
-    </footer>
+                </div>
 
+           
+                <div>
+                    <p class="text-gray-900 font-semibold mb-4">Quick Link</p>
+                    <div class="flex flex-col gap-2">
+                        <a href="#" class="text-gray-800 hover:text-[#d86943] transition-colors duration-300">Home</a>
+                        <a href="#" class="text-gray-800 hover:text-[#d86943] transition-colors duration-300">Who We Are</a>
+                        <a href="#" class="text-gray-800 hover:text-[#d86943] transition-colors duration-300">Our Philosophy</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-gray-900 font-semibold mb-4">Technologies</p>
+                    <div class="flex flex-col gap-2">
+                        <a href="#" class="text-gray-800 hover:text-[#d86943] transition-colors duration-300">HTML</a>
+                        <a href="#" class="text-gray-800 hover:text-[#d86943] transition-colors duration-300">CSS</a>
+                        <a href="#" class="text-gray-800 hover:text-[#d86943] transition-colors duration-300">JavaScript</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-6 border-[#d86943]">
+
+            <div class="flex justify-center sm:justify-start">
+                <a href="#">
+                    <img 
+                        class="w-auto h-7" 
+                        src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" 
+                        alt="Codespace Logo"
+                    >
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
